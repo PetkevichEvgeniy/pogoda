@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A6762DE35BBE3CD89278FF8 /* Pods_pogoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25D446A528BE8AF96F7F712 /* Pods_pogoda.framework */; };
 		CE6EC0F224A5E1CD00D485F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EC0F124A5E1CD00D485F8 /* AppDelegate.swift */; };
 		CE6EC0F424A5E1CD00D485F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EC0F324A5E1CD00D485F8 /* SceneDelegate.swift */; };
 		CE6EC0F624A5E1CD00D485F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EC0F524A5E1CD00D485F8 /* ViewController.swift */; };
 		CE6EC0F924A5E1CD00D485F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6EC0F724A5E1CD00D485F8 /* Main.storyboard */; };
 		CE6EC0FB24A5E1CF00D485F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6EC0FA24A5E1CF00D485F8 /* Assets.xcassets */; };
 		CE6EC0FE24A5E1CF00D485F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6EC0FC24A5E1CF00D485F8 /* LaunchScreen.storyboard */; };
+		CE6EC10624A5EFAB00D485F8 /* classNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EC10524A5EFAB00D485F8 /* classNumbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A6C6CAC5E2D051CDC2B81F4 /* Pods-pogoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pogoda.debug.xcconfig"; path = "Target Support Files/Pods-pogoda/Pods-pogoda.debug.xcconfig"; sourceTree = "<group>"; };
+		AD33AB1544141F649667E798 /* Pods-pogoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pogoda.release.xcconfig"; path = "Target Support Files/Pods-pogoda/Pods-pogoda.release.xcconfig"; sourceTree = "<group>"; };
 		CE6EC0EE24A5E1CD00D485F8 /* pogoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pogoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6EC0F124A5E1CD00D485F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE6EC0F324A5E1CD00D485F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		CE6EC0FA24A5E1CF00D485F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6EC0FD24A5E1CF00D485F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6EC0FF24A5E1CF00D485F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6EC10524A5EFAB00D485F8 /* classNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classNumbers.swift; sourceTree = "<group>"; };
+		E25D446A528BE8AF96F7F712 /* Pods_pogoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pogoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6762DE35BBE3CD89278FF8 /* Pods_pogoda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		341442B359BEF04F34DFFA78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E25D446A528BE8AF96F7F712 /* Pods_pogoda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8699A44DC44865142E00C8D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C6CAC5E2D051CDC2B81F4 /* Pods-pogoda.debug.xcconfig */,
+				AD33AB1544141F649667E798 /* Pods-pogoda.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE6EC0E524A5E1CD00D485F8 = {
 			isa = PBXGroup;
 			children = (
 				CE6EC0F024A5E1CD00D485F8 /* pogoda */,
 				CE6EC0EF24A5E1CD00D485F8 /* Products */,
+				8699A44DC44865142E00C8D5 /* Pods */,
+				341442B359BEF04F34DFFA78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,7 @@
 		CE6EC0F024A5E1CD00D485F8 /* pogoda */ = {
 			isa = PBXGroup;
 			children = (
+				CE6EC10524A5EFAB00D485F8 /* classNumbers.swift */,
 				CE6EC0F124A5E1CD00D485F8 /* AppDelegate.swift */,
 				CE6EC0F324A5E1CD00D485F8 /* SceneDelegate.swift */,
 				CE6EC0F524A5E1CD00D485F8 /* ViewController.swift */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE6EC10224A5E1CF00D485F8 /* Build configuration list for PBXNativeTarget "pogoda" */;
 			buildPhases = (
+				5D681A58B9A09FA49A4A2F96 /* [CP] Check Pods Manifest.lock */,
 				CE6EC0EA24A5E1CD00D485F8 /* Sources */,
 				CE6EC0EB24A5E1CD00D485F8 /* Frameworks */,
 				CE6EC0EC24A5E1CD00D485F8 /* Resources */,
+				A59862108637403A4B33258E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D681A58B9A09FA49A4A2F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pogoda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A59862108637403A4B33258E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pogoda/Pods-pogoda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pogoda/Pods-pogoda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pogoda/Pods-pogoda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE6EC0EA24A5E1CD00D485F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				CE6EC0F624A5E1CD00D485F8 /* ViewController.swift in Sources */,
 				CE6EC0F224A5E1CD00D485F8 /* AppDelegate.swift in Sources */,
 				CE6EC0F424A5E1CD00D485F8 /* SceneDelegate.swift in Sources */,
+				CE6EC10624A5EFAB00D485F8 /* classNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +355,7 @@
 		};
 		CE6EC10324A5E1CF00D485F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6C6CAC5E2D051CDC2B81F4 /* Pods-pogoda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		CE6EC10424A5E1CF00D485F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD33AB1544141F649667E798 /* Pods-pogoda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
